@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100vw;
+    font-family: "Roboto";
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+}
+
+.navbarLogo {
+    height: 10vh;
+    width: 15vw;
+    flex-shrink: 1;
+}
+
+.navbarList {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+}
+
+.navbarListItem {
+    font-size: 8px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.navbarLogoContainer {
+    display: flex;
+    margin: 0 5px;
+    max-width: 15vw;
+}
+
+.fab {
+    border: 2px solid grey;
+    font-size: 12px;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.mainImageContainer {
+    background-image: url("https://i.im.ge/2024/08/20/fiiC8a.heroimg.jpeg");
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.LoremIpsumButton {
+    color: #e9e9e9;
+    font-size: 20px;
+    height: 28px;
+    width: 180px;
+    background-image: linear-gradient(to right, #040404, #6c6c6c);
+    margin: 15px;
+    border-width: 0;
+}
+
+.descriptionContainer {
+    display: flex;
+    background-color: #b2b2b2;
+    justify-content: space-around;
+}
+
+.descriptionPara {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 13px;
+}
+
+.facilityMainContainer {
+    background-color: #dad6df;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 20px;
+}
+
+.eachFacility {
+    margin-right: 7px;
+    max-width: 25vw;
+}
+
+.facilityContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facilityImage {
+    height: 100px;
+    width: 25vw;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textRight {
+    text-align: right;
+    padding-right: 0;
+}
+
+.facilityButton {
+    background-color: #000000;
+    color: white;
+    font-size: 12px;
+    height: 18px;
+    width: 80px;
+    border-width: 0;
+}
+
+.facilityName {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.facilityDescription {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 767px) {
+    .navbarLogo {
+        height: 10vh;
+        width: 12vw;
+
+    }
+
+    .navbarListItem {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 5px;
+    }
+
+    .fab {
+        border: 2px solid grey;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .mainImageContainer {
+        height: 38vh;
+    }
+
+    .LoremIpsumButton {
+        font-size: 25px;
+        height: 39px;
+        width: 240px;
+        margin: 20px;
+    }
+
+    .descriptionPara {
+        font-size: 18px;
+        text-align: center;
+        margin: 15px 20px;
+    }
+
+    .facilityImage {
+        height: 200px;
+    }
+
+    .facilityName {
+        font-size: 21px;
+    }
+
+    .facilityDescription {
+        font-size: 18px;
+    }
+
+    .facilityButton {
+        font-size: 15px;
+        height: 26px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .navbarLogo {
+        height: 10vh;
+        width: 8vw;
+    }
+
+    .navbarListItem {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    .fab {
+        border: 2px solid grey;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    .mainImageContainer {
+        height: 90vh;
+    }
+
+    .LoremIpsumButton {
+        font-size: 28px;
+        height: 44px;
+        width: 300px;
+        margin: 25px;
+    }
+
+    .descriptionPara {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px 50px;
+    }
+
+    .facilityMainContainer {
+        padding: 20px 50px;
+    }
+
+    .facilityImage {
+        height: 280px;
+    }
+
+    .facilityName {
+        font-size: 30px;
+    }
+
+    .facilityDescription {
+        font-size: 24px;
+    }
+
+    .facilityButton {
+        font-size: 22px;
+        height: 36px;
+        width: 200px;
+    }
+}
